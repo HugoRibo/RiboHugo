@@ -1,0 +1,670 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,body{
+  height: 100%;
+	background-image: url('../img/black-Linen_@2X.png');
+}
+
+::selection{
+	background: #785196;
+	color:white;
+}
+
+/*!!!!!!!!!!!!!!FONTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@font-face {
+  font-family: ante;
+  src: url(font/Danzo.ttf);
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FLEXNAV!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#flexnav{
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+  z-index: 100;
+  box-shadow: 10px 10px 10px rgba(37, 37, 37, 0.49);
+  height: 80px;
+  background-color: #785196;
+  width: 100%;
+	font-family: 'ante', sans-serif;
+	transition:1s
+}
+
+#flexnav > div{
+	display: block;
+	margin:0;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!NAV!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#panier{
+	position: absolute;
+	top:78px;
+	right:104px;
+}
+
+#panier img{
+	width: 30px;
+}
+
+#panieresp, #logoutresp{
+	display: none;
+}
+
+#logout img{
+	width: 30px;
+}
+
+#tel{
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align: center;
+	color:white;
+	font-family: 'ante', sans-serif;
+	font-size: 1.3em;
+	position: inherit;
+}
+
+#fb{
+	position: absolute;
+	top:10px;
+	right:10px;
+}
+
+#fb img{
+	width: 32px;
+	border-radius: 6px;
+}
+
+#fb_mobile {
+	display: none;
+}
+
+#panier img{
+	width : 35px;
+}
+
+
+
+#logout {
+	position: absolute;
+	top : 80px;
+	right: 30px;
+}
+
+#gridcenter li.num{
+	display: none;
+}
+
+hr{
+	display: none;
+}
+
+#gridright img{
+	display: none;
+	width: 0px
+}
+#flexnav div#gridleft{
+  width:calc(10% - 1%);
+	margin-right: 1%
+}
+
+#flexnav div#gridcenter{
+  width: calc(90% - 1%)
+}
+
+#gridleft img{
+  width: 120px;
+	margin-left: 5%
+}
+
+#hoverpizza{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+	line-height: 80px;
+	margin-right: 11%;
+}
+
+#hoverpizza li{
+	display:inline-block;
+	position:relative;
+}
+
+#hoverpizza a{
+	text-decoration:none;
+	display:block;
+	font-size:1.4em;
+	padding-left:15px;
+	padding-right: 15px;
+	color:white;
+	font-family: 'ante', sans-serif;
+	transition:1s;
+}
+
+#hoverpizza li:hover a, #hoverpizza li:hover a{
+	background:#fff;
+	color:#785196;
+	transition:.5s
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CAROUSSEL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.owl-carousel {
+	height: 500px;
+	margin-top:3%;
+	box-shadow: 1px 1px 10px  #785196;
+}
+
+.owl-carousel div:not(.owl-dots) {
+  height: 500px;
+}
+
+.owl-carousel .owl-slide {
+  background-image: url("../img/pizza.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.owl-carousel .owl-slide2 {
+  background-image: url("../img/pizza.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.owl-carousel .owl-slide3 {
+  background-image: url("../img/1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+  text-align: center;
+  transform: translateY(40%);
+  text-shadow: 5px 5px 5px rgba(42, 42, 42, 0.5);
+  color:white;
+	height: 20px
+}
+
+h1{
+  font-family: 'ante', sans-serif;
+  font-weight: bold;
+  font-size:5em;
+}
+
+.title p {
+	font-size:1.3em;
+	z-index: 99;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!FLEXBOX!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.flexbox{
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:70px 50px 70px 50px
+}
+
+.flexbox div.gridproduct{
+	display: block;
+	margin:0;
+	height: 350px;
+}
+.flexbox div.nameproduct{
+	margin:0;
+	display: block;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!MAIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+main{
+	margin-top:5%
+}
+
+.flexbox div.grid3{
+	width: calc(35% - 0.5%);
+}
+
+.flexbox div.grid1{
+	width: calc( 65% - 0.5%);
+}
+
+.gridproduct{
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 5px #785196;
+	background-size: cover;
+}
+
+.flexbox div.gridproduct:hover{
+	cursor:pointer;
+	box-shadow: 1px 1px 11px #785196
+}
+
+.gridproduct h2{
+	font-size:2.8em;
+	font-family: 'ante', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 20px;
+	text-shadow: 2px 2px 2px #785196;
+	margin-top:150px
+}
+
+.gridproduct button{
+	text-align: left;
+	margin-left: 20px;
+	padding:10px 20px;
+	background: #785196;
+	border:none;
+	font-family: 'ante', sans-serif;
+	font-size: 1.1em;
+	transition:.5s
+}
+
+.gridproduct button:hover{
+	border : 2px solid #785196;
+	background:white;
+	cursor: pointer;
+	transition:.5s
+}
+
+.gridproduct button:hover a{
+	color:#785196;
+	transition:.5s
+}
+
+.nameproduct a:hover{
+	text-shadow: 2px 2px 2px #785196
+}
+
+.grid1{
+	background-image: url('../img/pizza.JPG');
+}
+
+.grid3{
+	background-image: url('https://metrouk2.files.wordpress.com/2015/04/pizza-gif.gif');
+}
+
+.grid2{
+	font-family: 'ante', sans-serif;
+}
+
+.product1 h2, .product2 h2{
+	margin-bottom:20px;
+}
+
+.nameproduct div.grid2{
+	border:none;
+	box-shadow: inherit;
+}
+
+.nameproduct div.grid2:hover{
+	box-shadow: inherit;
+	cursor: default;
+}
+
+.nameproduct a{
+	text-decoration: none;
+	color:white;
+}
+
+#iframe{
+	width: 60%
+}
+
+#contact{
+	text-align: center;
+	margin-top:30px;
+	font-family: 'ante', sans-serif;
+	width: 35%
+}
+
+#horaire{
+	line-height: 25px;
+	color: white;
+}
+
+#horaire span{
+	font-size:1.5em;
+	color:black;
+	color:white;
+}
+
+#livraison{
+	color:white;
+	font-size: 1.3rem
+}
+
+/*!!!!!!!!!!!!!!!!!!!FOOTER!!!!!!!!!!!!!!!!!!!!!!*/
+
+footer{
+	margin-top:5%;
+	background: #785196;
+	text-align: center;
+}
+
+#copyright ul li{
+	display: inline;
+}
+
+#copyright img{
+	width: 110px;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!RESPONSIVE!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width: 1265px) {
+
+	#gridcenter a{
+		font-size:1.1rem;
+		transition:1s
+	}
+
+	.owl-carousel {
+		height: 400px;
+	}
+	.owl-carousel div:not(.owl-dots) {
+	  height: 400px;
+	}
+
+}
+
+@media only screen and (max-width: 1073px) {
+
+	#flexnav div#gridcenter{
+		width: calc(85% - 1%)
+	}
+
+	#hoverpizza a{
+		font-size:0.9em;
+		transition:1s;
+		padding-left:10px;
+		padding-right: 10px;
+	}
+
+	#hidden1043{
+		opacity: 0
+	}
+
+	.owl-carousel {
+		height: 300px;
+	}
+
+	.owl-carousel div:not(.owl-dots) {
+	  height: 300px;
+	}
+
+}
+
+@media only screen and (max-width: 905px) {
+
+	#panier, #logout{
+	 display: none;
+	}
+
+	#panieresp, #logoutresp{
+		display: block;
+	}
+
+	#panieresp img{
+		width: 30px;
+	}
+
+	#logoutresp img{
+		width: 28px;
+	}
+
+	#tel{
+		display: none;
+	}
+
+	#flexnav{
+	  height: 60px;
+		transition:1s;
+		position:fixed;
+		top:0
+	}
+
+	#hoverpizza li:hover a, #hoverpizza li li:hover a{
+		background:inherit;
+		color:white;
+	}
+
+	h1{
+	  font-size:3em;
+	}
+
+	#tel > p {
+		font-size: 0.8em;
+		position: absolute;
+		left: 120px;
+		top : 80px;
+	}
+
+	#gridcenter li.num{
+		display: block;
+	}
+
+
+	#gridright img{
+		width: 40px;
+		position:fixed;
+		right: 10px;
+		top:10px
+	}
+
+	#fb_mobile{
+		margin-bottom: 10px;
+		padding: 0;
+		display:block;
+	}
+
+	#fb_mobile img{
+		width: 30px;
+		border-radius: 6px;
+	}
+
+	#panier {
+		position: fixed;
+		top: 14px;
+		right : 120px;
+		z-index: 200;
+	}
+
+	#logout {
+		position: fixed;
+		top : 16px;
+		right: 50px;
+		z-index: 200;
+	}
+
+	#gridright #menu{
+		display: block;
+	}
+
+	#gridright img:hover{
+		cursor: pointer;
+	}
+
+	#flexnav div#gridright ul li{
+	  display:none
+	}
+
+	#flexnav div#gridcenter{
+		width: 48%;
+		border-left: 3px solid rgb(100, 55, 145);
+		border-bottom:1px solid purple;
+		height: 100%;
+		position:fixed;
+		right: -1500px;
+		background:rgba(107, 58, 145, 0.95);
+		overflow: auto;
+	}
+
+	hr {
+		display: block;
+		width: 110px;
+		border:0;
+		background-color: white;
+		height: 3px;
+		border-radius: 3px;
+	}
+
+
+	#flexnav div#gridright{
+	  width: calc(25% - 1%)
+	}
+
+	#gridleft img{
+	  width: 110px;
+		margin-left: 5%
+	}
+
+	#gridcenter ul li{
+	  display: block;
+	}
+
+	#gridcenter a{
+	  text-decoration: none;
+	  color:white;
+	  font-family: 'ante', sans-serif;
+	  font-size: 1.1rem;
+	}
+
+	#hoverpizza > li {
+		height: 50px;
+	}
+
+	#gridcenter a:hover {
+		text-shadow: 1px 1px 15px rgba(212, 212, 212, 0.74)
+	}
+
+	#gridright ul li {
+	  display: inline;
+	  color:white;
+	  font-size:1.2rem;
+	  text-shadow: 10px 10px 10px rgba(37, 37, 37, 0.59)
+	}
+
+	.owl-carousel {
+		height: 250px;
+	}
+
+	.owl-carousel div:not(.owl-dots) {
+	  height: 250px;
+	}
+
+	#hoverpizza ul{
+		display:none
+
+	}
+
+	.flexbox div.nameproduct{
+		margin-top: 5%;
+		width: 100%;
+
+	}
+
+	.flexbox div.gridproduct{
+	  width:100%;
+		margin-bottom:5%;
+	}
+
+	#iframe {
+		width: 100%
+	}
+
+	#contact {
+		text-align: center;
+		margin-top:30px;
+		font-family: 'ante', sans-serif;
+		width: 100%
+	}
+
+
+}
+
+@media only screen and (max-width:768px){
+
+	main {
+		margin-top : 150px;
+	}
+
+	#horaire {
+		line-height:inherit;
+		font-size: 1rem;
+	}
+
+	#horaire span {
+		font-size: 1.3rem
+	}
+
+	#livraison {
+		font-size: 1rem
+	}
+
+	#fb {
+		top : 150px;
+	}
+
+	#fb img {
+		width: 30px;
+	}
+
+	#tel > p {
+		font-size: 0.8em;
+		position: absolute;
+		left: 80px;
+		top : 115px;
+	}
+
+
+}

@@ -1,0 +1,350 @@
+
+h1{
+  text-align: center;
+  margin-top:2%;
+  color:white;
+  font-family: 'ante', sans-serif;
+  padding-top: 100px;
+  padding-bottom:100px;
+  box-shadow: 2px 2px 5px black;
+  background: url('../img/salades/saladegrec.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#flextex{
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+  justify-content: space-between;
+  width: 56%;
+  margin-left: 2%;
+  font-family: 'ante', sans-serif;
+}
+
+#flextex > div{
+	display: block;
+  height: 150px;
+  width: 16%;
+  margin-bottom: 20px;
+}
+
+#saltex {
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+  margin-top: 50px;
+}
+
+#flexsal {
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1%;
+  font-family: 'ante', sans-serif;
+  width: 40%;
+}
+
+.salade0, .tex0 {
+  width: 100% !important;
+  height: 150px;
+	background-size: cover !important;
+}
+
+.salade0 .namepizza, .tex0 .namepizza {
+  text-align: center;
+  font-size: 30px;
+  padding: 63px 0px;
+}
+
+.salade1, .salade2, .salade3 {
+  width: 32.7%;
+  height: 150px;
+}
+
+.more{
+  display: none;
+  background:rgba(136, 113, 140, 0.7);
+  color:white;
+  height: 115px;
+  text-align: center;
+}
+
+.more p:first-child{
+  padding-top: 20px;
+}
+
+.add{
+  text-align: right;
+  padding-top: 90px;
+  padding-right: 10px
+}
+
+.add img{
+  width: 20px;
+}
+
+.namepizza{
+  font-size:1.2em;
+  background: rgba(136, 113, 140, 0.7);
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  background-size: cover;
+  height: 25px;
+  color:white;
+}
+
+.gridpiz, .gridbd{
+	background-position: center;
+	background-repeat: no-repeat;
+  background-attachment:scroll;
+	background-size: cover;
+}
+
+.gridpiz:hover, .gridbd:hover{
+  cursor: pointer;
+}
+
+.gridpiz:hover .more, .gridbd:hover .more{
+  display: block;
+}
+
+.gridpiz:hover .add, .gridbd:hover .add{
+  display: none;
+}
+
+
+
+
+
+/************mobile**************/
+
+@media screen and (max-width: 450px){
+
+  h1{
+    font-size: 30px;
+  }
+
+  #flexsal, #flextex {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #flexsal {
+    margin-bottom: 40px;
+  }
+
+  #flextex > div{
+  	display: block;
+    height: 150px;
+    margin-left:1%;
+    margin-right: 1%;
+    width: 47%;
+  }
+
+  .salade0, .tex0 {
+    height: 125px !important;
+    margin-bottom: 10px;
+  }
+
+  .salade0 .namepizza, .tex0 .namepizza {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .salade1, .salade2, .salade3 {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+}
+
+/************tablette************/
+
+@media all and (min-width: 851px) and (max-width: 1100px){
+  #flexsal {
+    width: 45%;
+  }
+
+  .namepizza {
+    font-size: 16px;
+  }
+
+  #flextex {
+    width: 50%;
+    margin-left: 1%;
+  }
+
+  #flextex > div {
+    width: 32%;
+  }
+
+  .salade1, .salade2, .salade3 {
+    width: 49%;
+  }
+}
+
+/************paysagemobile*************/
+
+@media all and (min-width: 451px) and (max-width: 750px){
+  h1{
+    font-size: 40px;
+  }
+
+  #flexsal, #flextex {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #flexsal {
+    margin-bottom: 40px;
+  }
+
+  #flextex > div{
+  	display: block;
+    height: 150px;
+    margin-left:1%;
+    margin-right: 1%;
+    width: 31%;
+  }
+
+  .salade0 {
+    height: 125px;
+    margin-bottom: 10px;
+  }
+
+  .salade0 .namepizza {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .salade1, .salade2, .salade3 {
+    width: 32%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+}
+
+/********paysagetablette*****************/
+
+@media all and (min-width: 751px) and (max-width: 850px){
+  h1{
+    font-size: 30px;
+  }
+
+  #flexsal, #flextex {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  #flexsal {
+    margin-bottom: 40px;
+  }
+
+  #flextex > div{
+  	display: block;
+    height: 150px;
+    margin-left:1%;
+    margin-right: 1%;
+    width: 47%;
+  }
+
+  .salade0 {
+    height: 125px;
+    margin-bottom: 10px;
+  }
+
+  .salade0 .namepizza {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .salade1, .salade2, .salade3 {
+    width: 32%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+}
+
+
+/****************/
+
+.salade1, .salade0{
+	background-image: url('../img/salades/saladegrec.jpg');
+}
+
+.salade2{
+	background-image: url('../img/salades/saladegrec.jpg');
+}
+
+.salade3{
+	background-image: url('../img/salades/saladegrec.jpg');
+}
+
+.salade4{
+	background-image: url('../img/salades/saladegrec.jpg');
+}
+
+.salade5{
+	background-image: url('../img/texmex/NUGGETS.JPG');
+}
+
+.salade6, .tex0{
+	background-image: url('../img/texmex/wings.JPG');
+}
+
+.salade7{
+	background-image: url('../img/texmex/CALAMARS.JPG');
+}
+
+.salade8{
+	background-image: url('../img/salades/saladegrec.jpg');
+}
+
+.salade9{
+  background-image: url('../img/texmex/PATATOES.JPG');
+}
+
+
+
+.dessert1, .dessert0, .boisson0 {
+  background-image: url('../img/dessert/dessert1.jpg');
+}
+
+.dessert2 {
+  background-image: url('../img/dessert/dessert2.jpg');
+}
+
+.dessert3 {
+  background-image: url('../img/dessert/dessert3.jpg');
+}
+
+.dessert4 {
+  background-image: url('../img/dessert/TARTE AU POMME CARAMEL.JPG');
+}
+
+.dessert5 {
+  background-image: url('../img/dessert/TARTE DAIM.JPG');
+}
+
+.dessert6 {
+  background-image: url('../img/dessert/TARTE AU POMMES.JPG');
+}
+
+.dessert7 {
+  background-image: url('../img/dessert/TARTE AU FRAISE REVISITE.JPG');
+}
+
+.dessert8 {
+  background-image: url('../img/dessert/TARTE 3 CHOCOLAT.JPG');
+}
+
+.dessert9 {
+  background-image: url('../img/dessert/TIRAMISU02.JPG');
+}

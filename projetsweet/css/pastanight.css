@@ -1,0 +1,417 @@
+
+
+
+/*//////////////Animation////////////*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;/*
+  margin: 0;
+  padding: 0;
+  overflow: hidden;*/
+  background: none;
+}
+
+/*#particle-canvas {
+  width: 100%;
+  height: 100%;
+}*/
+
+
+
+/*//////////////////Page pasta night////////////////*/
+
+main {
+  font-family: sans-serif;
+}
+
+.rayon{
+  text-align: center;
+  margin-top:2%
+}
+
+.rayon img{
+  width: 700px;
+}
+
+#flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: sans-serif;
+  margin-top: 25px;
+}
+
+#left {
+  /*box-shadow: 0px 0px 5px  #785196;*/
+  height: 500px;
+  background-image: url('../img/lune.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+  width: 45%;
+}
+
+#blur {
+  height: 500px;
+  background: rgba(0,0,0,0.7)
+}
+
+#right {
+  /*box-shadow: 0px 0px 5px  #785196;*/
+  width: 45%;
+  height: 500px;
+  background: url('../img/pizza.JPG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/******#head********/
+
+#head {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: rgba(120,81,150, 0.7);
+}
+
+#head h3, #head p {
+  text-align: center;
+  color: white;
+}
+
+#head h2 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'ante', sans-serif;
+}
+
+#head h3 {
+  font-size: 25px;
+  font-family: 'ante', sans-serif;
+}
+
+#head p {
+  font-size: 13px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+/********#menu***********/
+
+#cart {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#lt, #rt {
+  width: 35%;
+  margin-left: 10%;
+}
+
+#cart p {
+  color: #785196 !important;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'ante', sans-serif;
+}
+
+#cart ul li, #cart p {
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
+
+
+
+/**********foot**********/
+
+#foot  {
+  margin-top: 90px;
+}
+
+#foot p {
+  text-align: center;
+  font-size: 13px;
+  width: 70%;
+  margin-left: 15%;
+  color: white;
+}
+
+
+
+
+
+/**************RESPONSIVE*************/
+
+/**********mobileresponsive************/
+
+@media screen and (max-width: 450px) {
+
+    #left, #right {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+
+    #left {
+      background-size: contain;
+    }
+
+    #left, #blur {
+      height: 450px;
+    }
+
+    #right {
+      height: 200px;
+    }
+
+    /*******head*****/
+
+    #head {
+      padding-top: 10px;
+      padding-bottom: 7px;
+    }
+
+    #head h2, #head h3 {
+      font-size: 25px;
+    }
+
+    #head p {
+      font-size: 12px;
+    }
+
+    /******menu*****/
+
+    #cart {
+      margin-top: 50px;
+      width: 96%;
+      margin-left: 2%;
+    }
+
+    #lt, #rt {
+      padding: 7px;
+      width: calc(45% - 14px);
+      margin-left: 3%;
+    }
+
+    #cart h2 {
+      font-size: 15px;
+    }
+
+    #cart ul li {
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    /*****foot******/
+
+    #foot {
+      margin-top: 50px;
+    }
+
+    #foot p {
+      font-size: 10px;
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 10px;
+    }
+    .rayon img{
+      width: 300px;
+    }
+}
+
+
+
+
+/********mobilepaysage*****/
+
+@media all and (min-width: 451px) and (max-width: 750px) {
+
+  #left, #right {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #left {
+    background-size: contain;
+  }
+
+  #left, #blur {
+    height: 450px;
+  }
+
+  #right {
+    height: 200px;
+  }
+
+  /*******head*****/
+
+  #head {
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+
+  #head h2, #head h3 {
+    font-size: 27px;
+  }
+
+  #head p {
+    font-size: 13px;
+  }
+
+  /******menu*****/
+
+  #cart {
+    margin-top: 50px;
+    width: 96%;
+    margin-left: 2%;
+  }
+
+  #lt, #rt {
+    padding: 7px;
+    width: calc(35% - 14px);
+    margin-left: 10%;
+  }
+
+  #cart h2 {
+    font-size: 17px;
+  }
+
+  #cart ul li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /*****foot******/
+
+  #foot {
+    margin-top: 50px;
+  }
+
+  #foot p {
+    font-size: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+  }
+
+
+  .rayon img{
+    width: 300px;
+  }
+
+
+}
+
+
+
+/********tablettepaysage*****/
+
+@media all and (min-width: 751px) and (max-width: 800px) {
+
+    #left, #right {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    #right {
+      margin-bottom: 20px;
+    }
+
+    #left {
+      margin-bottom: 50px;
+    }
+
+    #img img {
+      height: 350px;
+    }
+
+    .rayon img{
+      width: 600px;
+    }
+
+    /*****head****/
+
+    #head {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+
+    #head h2, #head h3 {
+      font-size: 25px;
+    }
+
+    #head p {
+      font-size: 12px;
+    }
+
+    /******menu******/
+
+    #lt, #rt {
+      padding: 14px;
+      width: calc(45% - 28px);
+      margin-left: 3%;
+    }
+
+    #cart {
+      margin-top: 70px;
+      width: 90%;
+      margin-left: 5%;
+    }
+
+    #cart ul li {
+      font-size: 13px;
+    }
+
+    /******foot****/
+
+    #foot {
+      margin-top: 100px;
+    }
+
+    #foot p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+
+    /************tablette************/
+
+@media all and (min-width: 851px) and (max-width: 1100px){
+  #head h2, #head h3 {
+    font-size: 25px;
+  }
+
+  #head p {
+    font-size: 12px;
+  }
+
+  #cart {
+    margin-top: 70px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #cart ul li {
+    font-size: 13px;
+  }
+
+  .rayon img{
+    width: 600px;
+  }
+
+}

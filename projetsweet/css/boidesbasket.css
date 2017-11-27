@@ -1,0 +1,50 @@
+.boisson, .tityquan {
+  width: 45%;
+}
+
+.boisson p, .tityquan p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.reaureaureau {
+  margin-left: 20%;
+}
+
+.selectboi {
+  background: rgba(145, 86, 189, 0.7);
+  border-radius: 3px;
+  height: 30px;
+  width: 50%;
+  border: none;
+}
+
+.boidesform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.boidesform input {
+  width: 20% !important;
+  margin-left: 40%;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-right: 40%;
+}
+
+.boidesprice {
+  color: black;
+  font-size: 35px !important;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.choixbois {
+  font-size: 15px;
+  color: white;
+}

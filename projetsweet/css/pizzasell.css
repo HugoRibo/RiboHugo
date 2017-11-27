@@ -1,0 +1,470 @@
+.flexpiz{
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+  margin-top:7%;
+}
+
+.flexpiz > div{
+	display: block;
+}
+
+.flexpiz div.pizza{
+  height: 470px;
+  margin-left: 3%;
+  box-shadow: 1px 1px 10px  #785196;
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flexpiz div.right{
+  margin-left: 3%;
+  background: white;
+  box-shadow: 1px 1px 10px  #785196;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(40% - 40px);
+  height: 430px;
+}
+
+.pizzadescr h2{
+  font-family: 'ante';
+  width: 100%;
+  text-align: center;
+  color:#785196;
+  font-size:60px;
+}
+
+.pizzadescr .recette {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: black;
+}
+
+.pizzadescr p{
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  color:black;
+  font-size: 1.1em;
+}
+
+.addpanier {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  background: url('../img/black-Linen_@2X.png');
+}
+
+.addpanier form label {
+  color: white;
+  width: 30%;
+}
+
+.reausal {
+}
+
+.titletype {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.titletype .type {
+  width: 50%;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.type1{
+  float: left;
+}
+
+.type2 {
+  float: right;
+  text-align: right;
+}
+
+.linefdp {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.reau {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.reau1 {
+  float: left;
+}
+
+.reau2 {
+  float: right;
+}
+
+.valeur {
+  background: rgba(145, 86, 189, 0.3);
+  color: white !important;
+  width: 35px;
+  padding-top: 3px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  margin-top: 30px;
+}
+
+
+form input {
+  clear: both;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 30px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-bottom: 2px solid rgb(145, 86, 189);
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+form input:hover {
+  transition: 0.5s;
+  background: rgba(145, 86, 189, 0.3);
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+ form img {
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  background: rgba(145, 86, 189, 0.3);
+  transition: 0.3s;
+}
+
+.goch {
+  padding: 5px;
+  border-left: 2px solid  rgb(145, 86, 189);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;white
+}
+
+.droit {
+  padding: 5px;
+  border-right: 2px solid  rgb(145, 86, 189);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+form img:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background: rgba(145, 86, 189, 0.7);
+}
+
+/************error****************/
+
+.errorgood, .errorbad {
+  width: calc(70% - 20px);
+  margin-left: 15%;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: white
+}
+
+.errorgood {
+  background: rgba(0, 150, 0, 0.6);
+  border: 1px solid rgba(0, 150, 0, 0.8);
+}
+
+.errorbad {
+  background: rgba(150, 0, 0, 0.6);
+  border: 1px solid rgba(150, 0, 0, 0.8);
+}
+
+
+
+/**************responsive********/
+
+/************mobile**************/
+
+@media screen and (max-width: 450px){
+  .flexpiz div.pizza {
+    width: 90%;
+    margin-left: 5%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .titletype .type {
+    font-size: 12px;
+  }
+
+  .flexpiz div.right {
+    width: calc(90% - 40px) !important;
+    margin-left: 5%;
+  }
+
+  .pizzadescr h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .pizzadescr p{
+    font-size: 13px !important;
+  }
+
+  .valeur {
+    width: 40px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  form input {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+  }
+
+  .type {
+    font-size: 15px;
+  }
+
+  .reau {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+   form img {
+     width: 12px;
+     height: 12px;
+  }
+
+  .errorgood, .errorbad {
+    width: calc(96% - 20px);
+    margin-left: 2%;
+    font-size: 12px;
+  }
+}
+
+/************tablette************/
+
+@media all and (min-width: 851px) and (max-width: 1100px){
+  .flexpiz {
+    height: 440px;
+  }
+
+  .flexpiz div.pizza {
+    width: 40%;
+    margin-left: 3%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .titletype .type {
+    font-size: 12px;
+  }
+
+  .flexpiz div.right {
+    width: calc(50% - 40px);
+    margin-left: 3%;
+  }
+
+  .pizzadescr h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .pizzadescr p{
+    font-size: 15px;
+  }
+
+  .valeur {
+    width: 40px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  form input {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+  }
+
+  .type {
+    font-size: 15px;
+  }
+
+  .reau {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+   form img {
+     width: 12px;
+     height: 12px;
+  }
+
+  .errorgood, .errorbad {
+    width: calc(96% - 20px);
+    margin-left: 2%;
+    font-size: 12px;
+  }
+}
+
+/************paysagemobile*************/
+
+@media all and (min-width: 451px) and (max-width: 750px){
+  .flexpiz div.pizza {
+    width: 70%;
+    margin-left: 15%;
+    height: 170px;
+    margin-bottom: 20px;
+  }
+
+  .titletype .type {
+    font-size: 12px;
+  }
+
+  .flexpiz div.right {
+    width: calc(70% - 40px);
+    margin-left: 15%;
+  }
+
+  .pizzadescr h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .pizzadescr p{
+    font-size: 13px !important;
+  }
+
+  .valeur {
+    width: 40px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  form input {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+  }
+
+  .type {
+    font-size: 15px;
+  }
+
+  .reau {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+   form img {
+     width: 12px;
+     height: 12px;
+  }
+
+  .errorgood, .errorbad {
+    width: calc(96% - 20px);
+    margin-left: 2%;
+    font-size: 12px;
+  }
+}
+
+/********paysagetablette*****************/
+
+@media all and (min-width: 751px) and (max-width: 850px){
+  .flexpiz div.pizza {
+    width: 70%;
+    margin-left: 15%;
+    height: 220px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .titletype .type {
+    font-size: 12px;
+  }
+
+  .flexpiz div.right {
+    width: calc(70% - 40px);
+    margin-left: 15%;
+    margin-bottom: 50px;
+  }
+
+  .pizzadescr h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .pizzadescr p{
+    font-size: 13px !important;
+  }
+
+  .valeur {
+    width: 40px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  form input {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+  }
+
+  .type {
+    font-size: 15px;
+  }
+
+  .reau {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+   form img {
+     width: 12px;
+     height: 12px;
+  }
+
+  .errorgood, .errorbad {
+    width: calc(96% - 20px);
+    margin-left: 2%;
+    font-size: 12px;
+  }
+}
